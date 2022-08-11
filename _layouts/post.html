@@ -44,7 +44,7 @@ layout: default
   }
 </style>
 
-<section id='shider' style="background-image:linear-gradient(0deg, hsla(0, 0%, 0%, 0.5) 0%, hsla(0, 0%, 0%, 0.5) 100%), url('/img/{{ page.img[0] }}');background-position: center;background-size: cover;">
+<section id='shider' style="background-image:linear-gradient(0deg, hsla(0, 0%, 0%, 0.5) 0%, hsla(0, 0%, 0%, 0.5) 100%), url('img/{{ page.img[0] }}');background-position: center;background-size: cover;">
     <h1><span>{{page.name}}</span></h1>
     <div id='gpag' style="position: absolute;bottom: 20px;left: 50%;transform: translateX(-50%);"><a href="/" style="color: #cccccc;">Home</a> <a>/ {{page.name}}</a></div>
 </section>
@@ -56,7 +56,7 @@ layout: default
 	<h2 style="text-align:center;margin-bottom:50px;padding:0 var(--row_widh);text-transform: uppercase;padding:40px;background:white;border-bottom:10px solid #4385f5;border-radius:0 0 0 50px;">My Profile</h2>
 	<div id="absk">
 		<div style='aspect-ratio:3/4;background:#f2f2f2;max-width:calc(300px + 10%);width:100%; display:flex;border-radius: 50px 0 0 0;overflow: hidden;margin-bottom:-20px;position: relative;' id="dygl">
-			<img src="/img/{{page.img[0]}}" style='width:100%;object-fit: cover;' alt='{{page.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
+			<img src="img/{{page.img[0]}}" style='width:100%;object-fit: cover;' alt='{{page.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
 		  </div>
 
 		  <div id="jhxs">
