@@ -20,7 +20,7 @@ permalink: "/sitemap.xml"
   {% endfor %}
   
   {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404"' %}
-  {% for page in pages %}
+  {% for page in pages reversed %}
     <url>
       <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
       {% if page.last_modified_at %}
