@@ -113,7 +113,7 @@ layout: default
 
   
         {% for post in site.posts %}
-            <a href="{{ post.url | absolute_url }}" style='width:300px;border-radius: 0 0px 50px 50px;overflow: hidden;'>
+            <a href="{{ post.url | absolute_url }}" style='width:300px;border-radius: 5px 5px 40px 40px;overflow: hidden;'>
               <div style='aspect-ratio:3/4;background:#f2f2f2;width:100%;display:flex;' id="imgbx">
                 <img src="/img/{{ post.img[0] }}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{ post.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
               </div>
