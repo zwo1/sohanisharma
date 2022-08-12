@@ -11,7 +11,7 @@ permalink: "/sitemap.xml"
     {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
     {% for doc in docs reversed %}
       <url>
-        <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
+        <loc>{{ doc.url | replace:'/index.html','/' | xml_escape | absolute_url }}</loc>
         {% if doc.last_modified_at or doc.date %}
           <lastmod>{{ doc.last_modified_at | default: doc.date | date: "%Y-%m-%d"}}</lastmod>
         {% endif %}
