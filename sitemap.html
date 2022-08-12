@@ -9,7 +9,7 @@ permalink: "/sitemap.xml"
   {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}
   {% for collection in collections %}
     {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
-    {% for doc in docs %}
+    {% for doc in docs reversed %}
       <url>
         <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
         {% if doc.last_modified_at or doc.date %}
@@ -20,7 +20,7 @@ permalink: "/sitemap.xml"
   {% endfor %}
   
   {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404"' %}
-  {% for page in pages reversed %}
+  {% for page in pages %}
     <url>
       <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
       {% if page.last_modified_at %}
