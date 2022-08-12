@@ -22,7 +22,7 @@ permalink: "/sitemap.xml"
   {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404"' %}
   {% for page in pages %}
     <url>
-      <loc>{{site.url}}{{ page.url | replace:'/index.html','/' | xml_escape }}</loc>
+      <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
       {% if page.last_modified_at %}
         <lastmod>{{ page.last_modified_at | date: "%Y-%m-%d" }}</lastmod>
       {% endif %}
@@ -32,7 +32,7 @@ permalink: "/sitemap.xml"
   {% assign static_files = page.static_files | where_exp:'page','page.sitemap != false' | where_exp:'page','page.name != "404.html"' %}
   {% for file in static_files %}
     <url>
-      <loc>{{site.url}}{{ file.path | replace:'/index.html','/' | xml_escape }}</loc>
+      <loc>{{ file.path | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
       <lastmod>{{ file.modified_time | date: "%Y-%m-%d" }}</lastmod>
     </url>
   {% endfor %}
