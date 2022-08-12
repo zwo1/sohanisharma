@@ -44,7 +44,7 @@ layout: default
   }
 </style>
 
-<section id='shider' style="background-image:linear-gradient(0deg, hsla(0, 0%, 0%, 0.5) 0%, hsla(0, 0%, 0%, 0.5) 100%), url('img/{{ page.img[0] }}');background-position: center;background-size: cover;">
+<section id='shider' style="background-image:linear-gradient(0deg, hsla(0, 0%, 0%, 0.5) 0%, hsla(0, 0%, 0%, 0.5) 100%), url('/img/{{ page.img[0] }}');background-position: center;background-size: cover;">
     <h1><span>{{page.name}}</span></h1>
     <div id='gpag' style="position: absolute;bottom: 20px;left: 50%;transform: translateX(-50%);"><a href="/" style="color: #cccccc;">Home</a> <a>/ {{page.name}}</a></div>
 </section>
@@ -56,7 +56,7 @@ layout: default
 	<h2 style="text-align:center;margin-bottom:50px;padding:0 var(--row_widh);text-transform: uppercase;padding:40px;background:white;border-bottom:10px solid #4385f5;border-radius:0 0 0 50px;">My Profile</h2>
 	<div id="absk">
 		<div style='aspect-ratio:3/4;background:#f2f2f2;max-width:calc(300px + 10%);width:100%; display:flex;border-radius: 50px 0 0 0;overflow: hidden;margin-bottom:-20px;position: relative;' id="dygl">
-			<img src="img/{{page.img[0]}}" style='width:100%;object-fit: cover;' alt='{{page.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
+			<img src="/img/{{page.img[0]}}" style='width:100%;object-fit: cover;' alt='{{page.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
 		  </div>
 
 		  <div id="jhxs">
@@ -119,7 +119,7 @@ layout: default
 <div id="imgbx">
 {% for img in page.img offset:1  %}
 	<div style='aspect-ratio:3/4;background:#f2f2f2;display:flex;width:calc(250px + 5vw);margin:calc(5px + 1vw);overflow:hidden;'>
-	<img src="img/{{img}}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{img | replace: "-", " " | remove: ".jpg" | capitalize}}'>
+	<img src="/img/{{img}}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{img | replace: "-", " " | remove: ".jpg" | capitalize}}'>
 	</div>
 {% endfor %}
 </div>
@@ -132,7 +132,7 @@ layout: default
 		<h3 style="text-align:center;padding:50px 50px 80px;background:white;border-top:10px solid #4385f5;border-radius: 50px 0px 0;    margin-bottom: -40px;">Previous Post</h3>
 		<a href="{{page.previous.url | absolute_url}}" style="margin:0 3vw; display: flex;flex-direction: column;">
 			<div style='aspect-ratio:3/4;background:#e6e6e6;width:100%;display:flex;'>
-				<img src="img/{{page.previous.img[0]}}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{ page.previous.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
+				<img src="/img/{{page.previous.img[0]}}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{ page.previous.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
 			</div>
 			<div style="background:white;text-align: center;color: black;padding:20px 10px;position: relative;border-radius: 0 0px 40px 40px;">
 				<h2 style="margin-bottom:10px;">{{ page.previous.name }}</h2>
@@ -146,7 +146,7 @@ layout: default
 		<h3 style="text-align:center;padding:50px 50px 80px;background:white;border-top:10px solid #4385f5;border-radius: 0 50px 0 0;    margin-bottom: -40px;">Next Post</h3>
 		<a href="{{page.next.url | absolute_url}}" style="margin:0 3vw;display: flex;flex-direction: column;">
 			<div style='aspect-ratio:3/4;background:#e6e6e6;width:100%;display:flex;'>
-				<img src="img/{{ page.next.img[0] }}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{ page.next.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
+				<img src="/img/{{ page.next.img[0] }}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{ page.next.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
 			</div>
 			<div style="background:white;text-align: center;color: black;padding:20px 10px;position: relative;border-radius: 0 0px 40px 40px;">
 				<h2 style="margin-bottom:10px;">{{ page.next.name }}</h2>
