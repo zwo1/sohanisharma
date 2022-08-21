@@ -12,7 +12,7 @@ hip: '34'
 language: Hindi & English
 region: India
 img:
-  - parul-dhawan-beautiful actresses-anchors-models-ahmedabad-escorts-celebrities.jpg
+  - parul-dhawan-beautiful-actresses-anchors-models-ahmedabad-escorts-celebrities.jpg
   - genuine-complete-body-and-mind-relaxation-happy-service-parul-dhawan.jpg
   - hot-beautiful-celebrities-actresses-anchors-models-ahmedabad-call-girl.jpg
   - parul-dhawan-ahmedabad-escorts-offering-gorgeous-genuine-young-girl.jpg
