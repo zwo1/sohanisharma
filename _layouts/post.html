@@ -113,12 +113,16 @@ layout: default
 		transform: scale(1.2);
 		
 	}
+	
+	#imgbx div::after{
+		content:'';
+	}
 </style>
 
 <h2 style="margin:0 var(--row_widh) -50px;text-align:center;padding:50px 50px 80px;background:white;border-top:10px solid #4385f5;border-radius: 50px 0px 0;">My Sexy Pic</h2>
 <div id="imgbx">
 {% for img in page.img offset:1  %}
-	<div style='aspect-ratio:3/4;background:#f2f2f2;display:flex;width:calc(250px + 5vw);margin:calc(5px + 1vw);overflow:hidden;'>
+	<div style='aspect-ratio:3/4;background:#f2f2f2;display:flex;width:calc(250px + 5vw);margin:calc(5px + 1vw);overflow:hidden;border-radius: 5px;position:relative;}'>
 	<img src="/img/{{img}}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{img | replace: "-", " " | remove: ".jpg" | capitalize}}'>
 	</div>
 {% endfor %}
