@@ -24,7 +24,7 @@ img:
   - swarupa-class-high-profile-call-girls-provider-with-all-types-of-escorts.jpg
   - are-you-looking-for-call-girls-in-ahmedabad-top-girls-avialble-swarupa.jpg
   - all-clients-want-best-escort-services-from-most-beautiful-ahmedabad-call-girls.jpg
-price: 2999
+price: 4999
 
 ---
 

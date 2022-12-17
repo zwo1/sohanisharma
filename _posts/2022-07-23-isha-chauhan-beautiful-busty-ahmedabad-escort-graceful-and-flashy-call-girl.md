@@ -22,7 +22,7 @@ img:
   - fully-safe-and-secure-full-body-massages-escort-girl-isha-chauhan.jpg
   - ahmedabad-escorts-service-different-and-best-you-enjoy-with-all-type-of-girls.jpg
   - isha-chauhan-escort-agency-are-the-leading-call-girls-in-ahmedabad.jpg
-price: 3599
+price: 4599
 
 ---
 

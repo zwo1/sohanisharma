@@ -3,7 +3,7 @@ layout: post
 name: Parul Dhawan
 categories:
   - Anchor Girl
-age: '26'
+age: '23'
 weight: '56'
 height: '5.5'
 chest: '30'
@@ -22,7 +22,7 @@ img:
   - high-and-get-in-touch-with-our-beautiful-call-girls-parul-dhawan.jpg
   - beautiful-online-call-girl-sex-service-attractive-personality-female-escort.jpg
   - parul-dhawan-female-escorts-medically-virgins-ultra-modern-celebrities.jpg
-price: 4799
+price: 5799
 
 ---
 

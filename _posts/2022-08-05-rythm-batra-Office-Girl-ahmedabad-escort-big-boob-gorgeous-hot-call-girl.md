@@ -23,7 +23,7 @@ img:
   - high-class-luxury-escort-agency-ahmedabad-provide-well-educated-beautiful-girl.jpg
   - rythm-batra-independent-call-girl-whatsapp-best-sex-escort-services-available.jpg
   - good-quality-affordable-independent-ahmedabad-escorts-girl-spend-quality-time.jpg
-price: 2299
+price: 6299
 
 ---
 

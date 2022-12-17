@@ -34,7 +34,7 @@ img:
  - chhetri-khushi-red-toop-hot-sexy-escorts-girl-sohanisharma.jpg
  - chhetri-khushi-body-like-sunny-leone-hot-call-girl-in-ahmedabad.jpg
  - chhetri-khushi-sexy-figger-collage-call-girl-ahmedabad.jpg
-price: 4999
+price: 4499
 
 ---
 
