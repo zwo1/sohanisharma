@@ -119,6 +119,7 @@ layout: default
 		transform: scale(1.2);
 		
 	}
+	#husg p{margin-bottom:20px;line-height: 1.5;letter-spacing: .5px;color: hsl(0, 0%, 30%);}
 </style>
 
 <h2 style="margin:0 var(--row_widh) -50px;text-align:center;padding:50px 50px 80px;background:white;border-top:10px solid #4385f5;border-radius: 50px 0px 0;">My Sexy Pic</h2>
@@ -129,7 +130,16 @@ layout: default
 	</div>
 {% endfor %}
 </div>
- 
+
+
+{% if page.paragraph %}
+<div style="padding:50px var(--row_widh);background: white;border-top:10px solid #4385f5;border-radius:50px 0 0 0;margin:-50px var(--row_widh) 50px;" id="husg">
+	{% assign beatles = page.paragraph | split: "|" %}
+	{% for member in beatles %}
+	<p>{{ member}}</p>
+	{% endfor %}
+</div>
+{% endif %}
 
 
 <div style="display:flex; margin: 0 var(--row_widh) 50px;">
