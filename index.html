@@ -98,17 +98,17 @@ layout: default
   <div class="col-md-6 mb-5">
       {% assign author = site.authors[post.author] %}
       <div class="card">
-          <a href="{{ post.url absolute_url }}">
+          <a href="{{ post.url | absolute_url }}">
               {% if post.image %} <img class="rounded mb-4" src="{{ site.baseurl }}/{{ post.image }}" alt="{{ post.title }}"> {% endif %}
           </a>
           <div class="card-block">
-              <h2 class="card-title h4 serif-font"><a href="{{ post.url absolute_url }}">{{ post.title }}</a></h2>
-              <p class="card-text text-muted">{{ post.excerpt strip_html truncatewords:15 }}</p>
+              <h2 class="card-title h4 serif-font"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+              <p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords:15 }}</p>
               <div class="metafooter">
                   <div class="wrapfooter small d-flex align-items-center">
                       <span class="author-meta">
                       By  <span class="post-name"> {% if post.author %}{{ author.display_name }}{% else %}{{ site.author }}{% endif %}, </span>             
-                      on <span class="post-date">{{ post.date date_to_string }}</span>
+                      on <span class="post-date">{{ post.date | date_to_string }}</span>
                       </span>               
                       <div class="clearfix"></div>
                   </div>
@@ -120,24 +120,24 @@ layout: default
 
   
         {% for post in site.posts %}
-            <a href="{{ post.url absolute_url }}" style='width:300px;border-radius: 5px 5px 40px 40px;overflow: hidden;'>
+            <a href="{{ post.url | absolute_url }}" style='width:300px;border-radius: 5px 5px 40px 40px;overflow: hidden;'>
               <div style='aspect-ratio:3/4;background:#f2f2f2;width:100%;display:flex;' id="imgbx">
-                <img src="/img/{{ post.img[0] }}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{ post.img[0] replace: "-", " " remove: ".jpg" capitalize}}'>
+                <img src="/img/{{ post.img[0] }}" style='width:100%;object-fit: cover;transition:transform .4s ease;' alt='{{ post.img[0] | replace: "-", " " | remove: ".jpg" | capitalize}}'>
               </div>
               <div style="background:white;text-align: center;color: black;padding:20px 10px;position: relative;">
                 <span style="position: absolute;top: -25px;left: 50%;padding: 10px;background: #4385f5;transform: translatex(-50%);color: white;border-radius: 50px;">{{ post.categories }}</span>
                 <h2 style="margin-bottom:10px;">{{ post.name }}</h2>
                 <p style="color:hsl(0, 0%, 30%);">Age: {{post.age}} year</p>
-                <p style="white-space: nowrap;overflow: hidden;font-size:0;">{{post.content strip_html strip_newlines strip}}</p>
+                <p style="white-space: nowrap;overflow: hidden;font-size:0;">{{post.content | strip_html | strip_newlines | strip}}</p>
               </div>
             </a>
             <script type="application/ld+json">
               {
                 "@context": "https://schema.org/",
                 "@type": "hentry",
-                "entry-title": "{{post.title replace_first:post.name, " -" |prepend:post.name}}",
-                "entry-summary": "{{post.content strip_html strip_newlines strip}}",
-                "bookmark": "{{post.url absolute_url}}"
+                "entry-title": "{{post.title | replace_first:post.name, " -" |prepend:post.name}}",
+                "entry-summary": "{{post.content | strip_html | strip_newlines | strip}}",
+                "bookmark": "{{post.url | absolute_url}}"
               }
             </script>
         {% endfor %}    
